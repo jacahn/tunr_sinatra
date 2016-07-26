@@ -1,0 +1,8 @@
+<h2>All Artists</h2>
+
+<% @artists.each do | artist| %>
+  <div class="artist">
+    <h2><a href='/artists/<%= artist.id %>'><%= artist.name %></a></h2>
+    <img src="<%= artist.photo_url %>">
+  </div>
+<% end %>
